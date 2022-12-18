@@ -1,0 +1,338 @@
+/* POLICES D'ECRITURE */
+@font-face {
+  font-family: AS;
+  src: url(/font/airstrikechrome.ttf);
+}
+  @font-face {
+  font-family: ASB;
+  src: url(/font/airstrikeplat.ttf);
+}
+@font-face {
+  font-family: BPT;
+  src: url(/font/BPT.ttf);
+}
+  @font-face {
+  font-family: BPH;
+  src: url(/font/BPH.ttf);
+}
+@font-face {
+  font-family: BPD;
+  src: url(/font/BPD.ttf);
+}
+ 
+/* ARRIERE PLAN ET COULEUR DES LABELS */
+body {
+  background-image:url(a.gif);
+  background-size:stretch;
+  color:#ff01cc;
+  letter-spacing: 2px;
+ 
+
+}
+
+block { display: inline-block;
+}
+
+
+h2{
+  position: relative;
+  text-align: center;
+  text-shadow: 3px 0 rgb(255, 255, 255), -3px 0 rgb(20, 229, 236), 0 3px rgb(17, 226, 233), 0 -3px #fff,
+             1px 1px #fff, -1px -1px #fff, 1px -1px #fff, -1px 1px #fff;
+  font-size:3.5rem ;
+  
+    }
+p, h2{
+
+align-items: center;
+
+font-family: 'AS';
+color: #ff01cc;
+
+
+  }
+
+  p {
+    border-radius: 10px;
+    background-color: #0000000c;
+    display: inline-block;
+    margin-top: 100px;
+    font-size: 3rem;
+    text-shadow: 3px 0 rgb(255, 255, 255), -3px 0 rgb(255, 255, 255), 0 3px rgb(255, 255, 255), 0 -3px #fff,
+    1px 1px #fff, -1px -1px #fff, 1px -1px rgb(255, 255, 255), -1px 1px #fff;
+    text-decoration: underline;
+  }
+  table {
+    align-items:center;
+    margin-top: 20px;
+    background-color: #00e5ffed;
+    border-collapse: collapse; /* SUPPRESION BORDS DOUBLES*/
+      letter-spacing: 1px;
+      font-family: 'BPT';
+      font-size: 1.3rem;
+      color:rgb(0, 0, 0);
+      text-transform: uppercase; 
+      display: inline-block;
+  }
+  
+  td {
+    padding-bottom: 1px;
+    padding-top: 1px;
+    font-size: 18px;
+font-family: 'BPD';
+color: rgb(0, 0, 0);
+text-align: left;
+padding-right: 20px;
+padding-left: 20px;
+}
+  td,
+  th {
+      border: 1px  rgb(0, 0, 0);
+     
+      
+  }
+  th{
+    font-family: 'BPH';
+    background-color:#ff01cc;
+    color: white;
+    position: relative;
+    padding: 10px;
+  
+}
+div.form
+{
+    display: block;
+    text-align: center;
+}
+form
+{
+    display: block;
+    
+    text-align: left;
+}
+  
+  
+  fieldset {
+    display: inline-block;
+    padding-left: 500px;
+    border:none;
+
+    
+  }
+
+
+  /* AFFICHAGE EN COLONNE LABEL */
+  label {
+    display: flex;
+    position: relative;
+      flex-direction: column-reverse;
+    font-size: 2rem;
+    font-family: 'BPD';
+    text-shadow: 2px 0 #fff, -2px 0 #fff, 0 2px #fff, 0 -2px #fff,
+             1px 1px #fff, -1px -1px #fff, 1px -1px #fff, -1px 1px #fff;
+             text-transform: uppercase;
+    
+
+  }
+  /* ANIMATION LABEL */
+  label>span {
+    transition: all .5s;
+    transform-origin: top left ;
+  }
+  label>input[placeholder=" "]:not(:focus):placeholder-shown + span {
+    transform: translateY(0.5rem) scale(1.05);
+    pointer-events: none;
+    opacity: .7
+  }
+  
+  input {
+    margin-right: 10px;
+    width: 250px;
+  }
+/* ----------------------- */
+
+ 
+
+
+  .btn-group button {
+    float: left;
+    position:relative; 
+    
+  }
+    
+
+  button.open-button{
+    margin-bottom: -20px;
+    background:linear-gradient(226deg, transparent 5%, #ff01cc 5%);
+    width: 80px;
+    color:  #00E6F6;
+    font-size: 40px;
+    border-right: blue 10px;
+  }
+
+
+  button.open-button2{ margin-bottom: -20px;
+    background:linear-gradient(226deg, transparent 5%, #ff01cc 5%);
+    width: 80px;
+    color:  #00E6F6;
+    font-size: 40px;
+    
+    
+  }
+  fieldset>button {
+    border-radius: 10px;
+  }
+  
+  input:invalid {
+    background-color: rgb(255, 0, 0);
+  }
+  
+  input:valid {
+    background-color: #00e1ff;
+  }
+  
+  button:hover,img:hover {
+    cursor: pointer;
+  }
+  
+  
+  .hide {
+    display: none;
+  }
+  /* TAILLE DE LA POUBELLE */
+  img{
+    width:30px;
+    height:30px;
+  }
+  /* ON CHANGE LA TAILLE DE LA JAQUETTE EN BOUGEANT LA SOURIS DESSUS */
+  img.img2 {
+    align-items:center ;
+    width:50px;
+    height: 60px;
+    border-radius: 10px;
+    border: 1px groove rgb(4, 226, 255);
+  }
+    
+      img.img2:hover {
+      transform: scale(4);
+    z-index: auto;}
+
+
+.form-popup {
+  display: none;
+  position: absolute;
+  bottom: 0;
+  right: 15px;
+  z-index: 9;
+}
+/* STYLE BOUTONS DE TRI  */
+#triAZ, #triZA {
+  font-size: 12px;
+  float: right;
+  margin-top: 6px;
+  margin-left: 3px;
+  color:  rgb(4, 255, 255);
+}
+/* STYLE COULEUR BOUTONS */
+button, button::after {
+  width: 200px;
+  height: 46px;
+  font-size: 15px;
+  font-family: 'BPH';
+  background: linear-gradient(45deg, transparent 5%, #ff01cc 5%);
+  border: 0;
+  color: #fff;
+  letter-spacing: 3px;
+  box-shadow: 6px 0px 0px #00E6F6;
+  outline: transparent;
+  position: relative;
+  margin-top: 30px;
+}
+/* COULEURS ALTERNE LIGNE TABLEAU   */
+tr 
+{
+    background-color: #b5f4ff;
+}
+
+tr:nth-child(odd)
+{
+    background-color: #27fdf5; 
+}
+/* --------------------------------- */
+
+/* ANIMATION GLITCH BOUTONS  */
+button::after {
+  --slice-0: inset(50% 50% 50% 50%);
+  --slice-1: inset(80% -6px 0 0);
+  --slice-2: inset(50% -6px 30% 0);
+  --slice-3: inset(10% -6px 85% 0);
+  --slice-4: inset(40% -6px 43% 0);
+  --slice-5: inset(80% -6px 5% 0);
+  
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(45deg, transparent 3%, #00E6F6 3%, #00E6F6 5%, #ff01cc 5%);
+  text-shadow: -3px -3px 0px #d005f8, 3px 3px 0px #00E6F6;
+  clip-path: var(--slice-0);
+}
+
+button:hover::after {
+  animation: 1s glitch;
+  animation-timing-function: steps(2, end);
+}
+
+
+
+
+@keyframes glitch {
+  0% {
+    clip-path: var(--slice-1);
+    transform: translate(-20px, -10px);
+  }
+  10% {
+    clip-path: var(--slice-3);
+    transform: translate(10px, 10px);
+  }
+  20% {
+    clip-path: var(--slice-1);
+    transform: translate(-10px, 10px);
+  }
+  30% {
+    clip-path: var(--slice-3);
+    transform: translate(0px, 5px);
+  }
+  40% {
+    clip-path: var(--slice-2);
+    transform: translate(-5px, 0px);
+  }
+  50% {
+    clip-path: var(--slice-3);
+    transform: translate(5px, 0px);
+  }
+  60% {
+    clip-path: var(--slice-4);
+    transform: translate(5px, 10px);
+  }
+  70% {
+    clip-path: var(--slice-2);
+    transform: translate(-10px, 10px);
+  }
+  80% {
+    clip-path: var(--slice-5);
+    transform: translate(20px, -10px);
+  }
+  90% {
+    clip-path: var(--slice-1);
+    transform: translate(-10px, 0px);
+  }
+  100% {
+    clip-path: var(--slice-1);
+    transform: translate(0);
+  }
+}
+/* ---------------------------------- */
