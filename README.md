@@ -10,6 +10,6 @@ Ajout des fonctions attendues:
 - Barre de recherche
 - Tri des titres
 - Headers de tableau
-- Amélioration du design (boutons à fonctions, couleurs, taille, etc..)
+- Amélioration du design (polices d'écriture, boutons à fonctions, couleurs, taille, etc..)
 
 By SAID.A
